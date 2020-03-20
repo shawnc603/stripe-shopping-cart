@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Education</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="This is the description">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script src="education.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <a href="/">Home</a> 
+                    <a href="/membership">Membership</a> 
+                    <a href="/donate">Donations</a>   
+                    <a href="/payment">Make a Payment</a>      
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Weekend School Registration</h1>
+        </header>
+        <section class="container content-section">
+        <div class="container">
+            <form class="form-horizontal" role="form">
+                <h2>Registration</h2>
+                <p>
+                    Already Registered but need to make a payment? Click Here: <a href="/payment">MAKE A PAYMENT</a>
+                </p>
+                <div class="form-group">
+                    <label for="parentFirstName" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="text" id="parentFirstName" placeholder="First Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="parentLastName" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="text" id="parentLastName" placeholder="Last Name" class="form-control" autofocus>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="parentEmail" id="parentEmail" placeholder="Email" class="form-control" name= "email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="parentPhoneNumber" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="parentPhoneNumber" id="parentPhoneNumber" placeholder="Phone Number" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child1" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child1" id="child1FullName" placeholder="Child 1 Full Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child1Age" class="col-sm-1 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child1Age" id="child1Age" placeholder="Child 1 Age" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child2" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child2" id="child2FullName" placeholder="Child 2 Full Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child2Age" class="col-sm-1 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child2Age" id="child2Age" placeholder="Child 2 Age" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child3" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child3" id="child3FullName" placeholder="Child 3 Full Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child3Age" class="col-sm-1 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child3Age" id="child3Age" placeholder="Child 3 Age" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child4" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child4" id="child4FullName" placeholder="Child 4 Full Name" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="child4Age" class="col-sm-1 control-label"></label>
+                    <div class="col-sm-9">
+                        <input type="child4Age" id="child4Age" placeholder="Child 4 Age" class="form-control">
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-register" type="button">REGISTER</button>
+            </form>
+        </div>
+        </section>
+        <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+            <div class="row">
+
+            
+            <div class="col-md-3 mx-auto">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+            </div>
+            </div>
+
+
+        </div>
+        </footer>
+    </body>
+</html>
+

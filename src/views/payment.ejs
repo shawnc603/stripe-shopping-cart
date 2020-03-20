@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="This is the description">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="payment.js" defer></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <a href="/">Home</a> 
+                    <a href="/membership">Membership</a> 
+                    <a href="/education">Education</a> 
+                    <a href="/donate">Donations</a>       
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Payments</h1>
+        </header>
+        <section class="container content-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="container">
+                    <article class="part card-details">
+                        <h1>
+                        Payment
+                        </h1>
+                        <form action="" if="cc-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="ddlist" class="control-label">Please choose "Membership" or "Weekend School"</label>
+                                <select  id="ddlist" class="form-control" >
+                                    <option value="">--Please Make a Selection--</option>
+                                    <option value="Membership">Membership Annual Fee $100.00</option>
+                                    <option value="WeekendSchool">Weekend School - 9 month Fee $550.00</option>
+                                </select>
+                            </div>
+                            <%# <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-9">
+                                    <input type="email" id="email" placeholder="Email" class="form-control" name= "email" required="required" data-error="Please enter a valid email.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="col-sm-3 control-label"></label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="fullName" placeholder="Full Name on Card" class="form-control" autofocus>
+                                </div>
+                            </div> %>
+                        </form>
+                    </article>
+                    <div class="part bg"></div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-payment" type="button">MAKE PAYMENT</button>       
+        </div>
+        </section>
+        <footer class="page-footer font-small indigo">
+        <div class="container text-center text-md-left">
+            <div class="row">
+            <div class="col-md-3 mx-auto">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            </div>
+            <hr class="clearfix w-100 d-md-none">
+            <div class="col-md-3 mx-auto">
+            </div>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
+

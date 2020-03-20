@@ -1,0 +1,42 @@
+{
+    "donations": [
+      {
+        "id": 1,
+        "name": "Operations",
+        "price": 1,
+        "imgName": "Operations.png"
+      },
+      {
+        "id": 2,
+        "name": "Construction",
+        "price": 1,
+        "imgName": "Construction.png"
+      },
+      {
+        "id": 3,
+        "name": "Zakah",
+        "price": 1,
+        "imgName": "Zakah.png"
+      },
+      {
+        "id": 4,
+        "name": "Sadaqa",
+        "price": 1,
+        "imgName": "Sadaqa.png"
+      }
+    ],
+    "merch": [
+      {
+        "id": 6,
+        "name": "T-Shirt",
+        "price": 1999,
+        "imgName": "Shirt.png"
+      },
+      {
+        "id": 7,
+        "name": "Coffee-Cup",
+        "price": 699,
+        "imgName": "Cofee.png"
+      }
+    ]
+  }
